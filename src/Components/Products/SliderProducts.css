@@ -1,0 +1,185 @@
+.slider-products {
+    padding: clamp(30px, 5vw, 50px) 0;
+}
+.head {
+    position: relative;
+    margin-bottom: clamp(8px, 1.5vw, 10px);
+    border-bottom: 1px solid var(--border-color);
+    padding: clamp(10px, 2vw, 20px) clamp(10px, 2vw, 20px) clamp(15px, 3vw, 20px) 0;
+}
+.head::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: clamp(60px, 20vw, 100px);
+    height: clamp(2px, 0.5vw, 2px);
+    background-color: var(--main-color);
+}
+.head h2 {
+    color: var(--main-color);
+    font-size: clamp(20px, 4vw, 30px);
+    margin-bottom: clamp(5px, 1.5vw, 10px);
+    text-transform: capitalize;
+    line-height: 1.2;
+    word-break: break-word;
+    white-space: normal;
+}
+.head p {
+    font-size: clamp(12px, 3vw, 16px);
+    margin-top: clamp(5px, 1vw, 10px);
+    color: #555;
+    line-height: 1.4;
+    word-break: break-word;
+}
+/* Card */
+.card {
+    width: clamp(180px, 20vw, 250px);
+    background-color: white;
+    padding: clamp(15px, 2vw, 25px) clamp(10px, 1.5vw, 15px);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-duration);
+    border-radius: clamp(4px, 1vw, 5px);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+}
+.card:hover {
+    border-color: var(--main-color);
+    box-shadow: 10px 10px 15px #94949428;
+}
+.card .image {
+    position: relative;
+    height: clamp(130px, 20vw, 180px);
+    padding: 0 clamp(10px, 2vw, 20px);
+    margin: clamp(8px, 1.5vw, 10px) 0 clamp(20px, 3vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .image img {
+    height: clamp(120px, 18vw, 160px);
+    width: auto;
+}
+.card .name {
+    margin-bottom: clamp(8px, 1.5vw, 10px);
+    color: var(--color-heading);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.card .stars {
+    margin: clamp(10px, 2vw, 15px) 0;
+    display: flex;
+    gap: clamp(2px, 0.5vw, 3px);
+}
+.card .stars svg {
+    fill: var(--star-color);
+    font-size: clamp(14px, 3vw, 18px);
+}
+.card .price {
+    font-weight: bold;
+    font-size: clamp(16px, 3.5vw, 20px);
+}
+.card .icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    right: clamp(-40px, -10vw, -50px);
+    gap: clamp(8px, 1.5vw, 10px);
+    transition: var(--transition-duration);
+}
+.card .icons span {
+    width: clamp(26px, 4.5vw, 40px);
+    height: clamp(26px, 4.5vw, 40px);
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: var(--transition-duration);
+    font-size: clamp(11px,1.6vw,18px);
+}
+.card:hover .icons {
+    right: clamp(15px, 4vw, 20px);
+}
+.card .icons span:hover {
+    scale: 1.1;
+}
+.card.in-cart .add {
+    background-color: var(--main-color);
+    cursor: default;
+    pointer-events: none;
+    color: white;
+}
+.card.in-cart .add:hover {
+    scale: 1;
+}
+.card .icons .added {
+    background-color: var(--main-color);
+    color: white;
+}
+.status-cart {
+    position: absolute;
+    top: clamp(-25px, -6vw, -30px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(11px, 2.5vw, 13px);
+    transition: var(--transition-duration);
+    display: none;
+    align-items: center;
+    gap: clamp(4px, 1vw, 5px);
+    color: #008000;
+}
+.in-cart .status-cart {
+    display: flex;
+    top: clamp(12px, 3vw, 15px);
+}
+
+/* In Cart Notification */
+.incart-notify {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 3vw, 20px);
+    max-width: clamp(220px, 50vw, 300px);
+    justify-content: flex-start;
+    padding: clamp(8px, 2vw, 10px) 0;
+}
+.incart-notify img {
+    height: clamp(30px, 8vw, 40px);
+    width: auto;
+    object-fit: cover;
+}
+.incart-notify h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: clamp(3px, 1vw, 5px);
+}
+.incart-notify p {
+    font-size: clamp(12px, 3vw, 14px);
+    margin-bottom: clamp(5px, 1vw, 10px);
+}
+.incart-notify .view {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    border-radius: clamp(20px, 5vw, 30px);
+    width: fit-content;
+    padding: clamp(4px, 1.5vw, 5px) clamp(8px, 2vw, 10px);
+    transition: var(--transition-duration);
+    font-size: clamp(12px, 3vw, 14px);
+}
+.incart-notify .view:hover {
+    background-color: var(--btn-hover);
+}
+.favourite-notify .content {
+    margin-left: clamp(4px, 1vw, 5px);
+}

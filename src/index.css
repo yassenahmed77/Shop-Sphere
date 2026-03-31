@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#3a86ff;
+    --p-color:#7b7b7b;
+    --bg-color:#f3f3f3;
+    --white-color:#fff;
+    --color-heading:#253237;
+    --border-color:#d6d6d6d5;
+    --star-color:#f8d941;
+    --transition-duration: .3s;
+    --btn-hover : #2a78e0;
+}
+body{
+    background-color: var(--white-color);
+    font-family: "Inter", sans-serif;
+    padding-top: 170px;
+}
+img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-heading);
+    font-family: "DM Sans", sans-serif;
+}
+span{
+    color: var(--main-color);
+}
+input,button,select,textarea{
+    outline: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+.btn{
+    display: block;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px 20px;
+    transition: var(--transition-duration);
+}

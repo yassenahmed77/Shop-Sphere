@@ -1,0 +1,63 @@
+.slider {
+    position: relative;
+    margin-bottom: clamp(60px, 6vw, 80px);
+    padding-top: clamp(15px, 3vw, 20px);
+}
+
+.swiper-slide .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: clamp(5px, 5%, 50px);
+    max-width: 90%; /* عشان النصوص الطويلة تبقى جوه السلايدر */
+    word-break: break-word;
+}
+
+.swiper-slide .content h4 {
+    text-transform: uppercase;
+    font-size: clamp(12px, 1.5vw, 16px); 
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: clamp(5px, 0.8vw, 10px);
+    line-height: 1.2;
+}
+
+.swiper-slide .content h3 {
+    font-size: clamp(20px, 4vw, 36px);
+    margin-bottom: clamp(20px, 3vw, 35px);
+    color: var(--main-color);
+    font-weight: bolder;
+    line-height: 1.1;
+    word-break: break-word;
+}
+
+.swiper-slide .content p {
+    font-size: clamp(12px, 1.5vw, 18px);
+    margin-top: clamp(15px, 2.5vw, 30px);
+    margin-bottom: clamp(15px, 2.5vw, 30px);
+    color: var(--p-color);
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.swiper-slide .btn {
+    display: block;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: fit-content;
+    padding: clamp(8px, 1.5vw, 12px) clamp(15px, 2.5vw, 20px);
+    transition: var(--transition-duration);
+    white-space: nowrap;
+    font-size: clamp(11px,2vh,17px);
+}
+
+.swiper-slide .btn:hover {
+    scale: 1.1;
+}
+@media(max-width:500px){
+    .slider{
+        display: none;
+    }
+}

@@ -1,0 +1,76 @@
+.skeleton {
+    background: #e5e7eb;
+    border-radius: 8px;
+    animation: skeleton-pulse 1.8s ease-in-out infinite alternate;
+    position: relative;
+    overflow: hidden;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.75) 50%,
+        transparent 60%
+    );
+    animation: skeleton-shimmer 1.6s linear infinite;
+}
+@keyframes skeleton-pulse {
+    from { background: #e5e7eb; }
+    to   { background: #f3f4f6; }
+}
+@keyframes skeleton-shimmer {
+    0%   { transform: translateX(-150%); }
+    100% { transform: translateX(300%); }
+}
+.slider-products .skeleton,
+.slider-products .skeleton * {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.card.skeleton-card {
+    width: clamp(180px, 20vw, 250px);
+    padding: clamp(15px, 2vw, 25px) clamp(10px, 1.5vw, 15px);
+    border: 1px solid var(--border-color);
+    border-radius: clamp(4px, 1vw, 5px);
+    background-color: white;
+    margin: auto;
+}
+.card.skeleton-card .image .skeleton {
+    width: 100%;
+    height: clamp(130px, 20vw, 180px);
+    border-radius: 8px;
+}
+.head .skeleton-title {
+    height: clamp(20px, 4vw, 30px);
+    width: 65%;
+    margin-bottom: clamp(5px, 1.5vw, 10px);
+}
+.head .skeleton-subtitle {
+    height: clamp(12px, 3vw, 16px);
+    width: 85%;
+}
+.card.skeleton-card .name.skeleton {
+    height: clamp(16px, 2.5vw, 20px);
+    width: 92%;
+    margin-bottom: clamp(8px, 1.5vw, 10px);
+}
+.card.skeleton-card .stars .skeleton {
+    width: clamp(14px, 3vw, 18px);
+    height: clamp(14px, 3vw, 18px);
+    border-radius: 50%;
+}
+.card.skeleton-card .price.skeleton {
+    height: clamp(18px, 3.5vw, 22px);
+    width: 65%;
+    margin-top: clamp(6px, 1.5vw, 10px);
+}
+.card.skeleton-card .icons .skeleton {
+    width: clamp(26px, 4.5vw, 40px);
+    height: clamp(26px, 4.5vw, 40px);
+    border-radius: 50%;
+}

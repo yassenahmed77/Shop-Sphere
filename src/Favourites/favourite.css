@@ -1,0 +1,17 @@
+.favourites .products{
+    display: flex;
+    gap: clamp(10px, 2vw, 20px);
+    flex-wrap: wrap;
+    padding-bottom: clamp(5px, 1.5vw, 10px);
+    justify-content: center;
+    align-items: center;
+}
+.favourites .products .product{
+    transition: var(--transition-duration);
+    flex: 1 1 clamp(150px, 20%, 250px);
+    max-width: clamp(200px, 22%, 300px); 
+}
+.favourites .no-items{
+    color: var(--p-color);
+    font-size: clamp(14px, 2vw, 17px);
+}

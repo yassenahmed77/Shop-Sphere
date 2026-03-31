@@ -1,0 +1,363 @@
+.item-details{
+    padding: clamp(30px, 5vw, 50px) 0;
+}
+.item-details .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.images{
+    width: clamp(250px, 40%, 600px)
+}
+.images .big-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images .big-image img{
+    max-height: clamp(150px, 40vw, 390px);
+    width: auto;
+}
+.images .small-images{
+    margin-top: clamp(10px, 2vw, 20px);
+    display: flex;
+    gap: clamp(10px, 4vw, 40px);
+    cursor: pointer;
+    justify-content: center;
+}
+.images .small-images img{
+    width: clamp(60px, 24%, 120px);
+    transition:var(--transition-duration) ;
+}
+.images .small-images img:hover{
+    transform: scale(1.1);
+}
+.item-details .details{
+    width: clamp(250px, 58%, 600px);
+}
+.item-details .details .name{
+    margin-bottom: clamp(15px, 3vw, 30px);
+    color: var(--main-color);
+    font-size: clamp(18px, 2.5vw, 26px);
+}
+.item-details .details .stars{
+    margin: 15px 0 20px;
+    display: flex;
+    gap: 3px;
+}
+.item-details .details .stars svg{
+    fill: var(--star-color);
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+.item-details .details .price{
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--p-color);
+    margin-bottom: clamp(10px, 2vw, 20px);
+}
+.item-details .details h5{
+    font-weight: 500;
+    margin-bottom: clamp(10px, 2vw, 20px);
+    font-size: clamp(14px, 1.8vw, 16px);
+}
+.item-details .details .desc{
+    line-height: 1.6;
+    color: var(--p-color);
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+.item-details .details h3{
+    font-size: clamp(18px, 2.5vw, 20px);
+    margin: clamp(15px, 3vw, 25px) 0;
+}
+.item-details .details .btn{
+    display: flex;
+    align-items: center;
+    gap: clamp(5px, 2vw, 8px);
+    margin-bottom: clamp(10px, 2vw, 20px);
+    transition: var(--transition-duration);
+    font-size: clamp(11px,2.2vh,22px);
+}
+.item-details .details .btn:hover{
+    transform: scale(1.11);
+}
+.item-details .details .icons{
+    margin-top: clamp(10px, 2vw, 20px);
+    display: flex;
+    gap: clamp(5px, 2vw, 10px);
+}
+.item-details .details .icons span{
+    width: clamp(30px, 5vw, 40px);
+    height: clamp(30px, 5vw, 40px);
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition-duration);
+}
+.item-details .details .icons span.added{
+    background-color: var(--main-color);
+    color: white;
+}
+.item-details .details .icons span:hover{
+    transform: scale(1.11);
+    background-color: #3a86ff;
+    color: white;
+}
+@media(max-width:500px){
+    .item-details .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(20px, 3vw, 50px);
+    }
+}
+/* Loading Skeleton */
+/* ------------------------------ */
+/* Product Details Skeleton CSS    */
+/* ------------------------------ */
+
+.loading-items {
+  padding: clamp(30px, 5vw, 50px) 0;
+}
+
+.loading-items .item-details .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: clamp(20px, 3vw, 50px);
+}
+
+/* Images */
+.loading-items .images {
+  width: clamp(250px, 40%, 600px);
+}
+
+.loading-items .images .big-image {
+  width: 100%;
+  height: clamp(150px, 40vw, 390px);
+  border-radius: 10px;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+.loading-items .small-images {
+  margin-top: clamp(10px, 2vw, 20px);
+  display: flex;
+  gap: clamp(10px, 4vw, 40px);
+  justify-content: center;
+}
+
+.loading-items .small-images span {
+  flex: 1;
+  height: clamp(60px, 24%, 120px);
+  border-radius: 5px;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+/* Details */
+.loading-items .details {
+  width: clamp(250px, 58%, 600px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 2vw, 20px);
+}
+
+.loading-items .details .name {
+  height: clamp(30px, 4vw, 40px);
+  width: 80%;
+  border-radius: 5px;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+.loading-items .details .stars {
+  display: flex;
+  gap: 3px;
+  margin: 0; /* no extra margin for skeleton */
+}
+
+.loading-items .details .stars span {
+  width: clamp(14px, 1.5vw, 18px);
+  height: clamp(14px, 1.5vw, 18px);
+  border-radius: 3px;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+.loading-items .details .price {
+  width: 50%;
+  height: clamp(20px, 2vw, 30px);
+  border-radius: 5px;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+.loading-items .details h5 span,
+.loading-items .details h3 span,
+.loading-items .details .desc,
+.loading-items .details .btn.add {
+  border-radius: 5px;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+/* Specific heights */
+.loading-items .details h5 span {
+  height: clamp(15px, 3vw, 30px);
+}
+
+.loading-items .details .desc {
+  height: clamp(80px, 12vw, 120px);
+}
+
+.loading-items .details h3 span {
+  height: clamp(20px, 2.5vw, 30px);
+}
+
+.loading-items .details .btn.add {
+  width: clamp(120px, 40%, 200px);
+  height: clamp(35px, 5vw, 50px);
+}
+
+/* Icons */
+.loading-items .details .icons {
+  display: flex;
+  gap: clamp(5px, 2vw, 10px);
+}
+
+.loading-items .details .icons span {
+  width: clamp(30px, 5vw, 40px);
+  height: clamp(30px, 5vw, 40px);
+  border-radius: 50%;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+/* Prevent hover/click */
+.loading-items .details .btn,
+.loading-items .details .icons span {
+  pointer-events: none;
+}
+
+.loading-items .details .btn:hover,
+.loading-items .details .icons span:hover {
+  transform: none;
+  background-color: #ddd;
+  color: inherit;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { background-color: #eee; }
+  50% { background-color: #ddd; }
+  100% { background-color: #eee; }
+}
+
+/* Responsive */
+@media(max-width:500px){
+  .loading-items .item-details .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Loading Skeleton */
+.skeleton {
+    background: #e5e7eb;
+    border-radius: 8px;
+    animation: skeleton-pulse 1.8s ease-in-out infinite alternate;
+    position: relative;
+    overflow: hidden;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.skeleton::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.75) 50%,
+        transparent 60%
+    );
+    animation: skeleton-shimmer 1.6s linear infinite;
+}
+@keyframes skeleton-pulse {
+    from { background: #e5e7eb; }
+    to   { background: #f3f4f6; }
+}
+@keyframes skeleton-shimmer {
+    0%   { transform: translateX(-150%); }
+    100% { transform: translateX(300%); }
+}
+
+.item-details .skeleton,
+.item-details .skeleton * {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.big-image .skeleton {
+    width: 100%;
+    height: clamp(150px, 40vw, 390px);
+    border-radius: 12px;
+}
+.small-images{
+    pointer-events: none !important;
+    cursor: default !important;
+}
+.small-images .skeleton {
+    width: clamp(60px, 13vw, 120px);
+    height: clamp(60px, 13vw, 120px);
+    border-radius: 8px;
+}
+.name.skeleton {
+    height: clamp(18px, 2.5vw, 26px);
+    width: 85%;
+    margin-bottom: clamp(15px, 3vw, 30px);
+}
+.stars .skeleton {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.price.skeleton {
+    height: clamp(16px, 2vw, 20px);
+    width: 45%;
+    margin-bottom: clamp(10px, 2vw, 20px);
+}
+.details h5 .skeleton {
+    height: clamp(14px, 1.8vw, 16px);
+    width: 60%;
+    display: block;
+    margin-bottom: clamp(10px, 2vw, 20px);
+}
+.desc.skeleton {
+    height: 1.15em;
+    margin-bottom: 0.65em;
+}
+.desc.skeleton:last-of-type {
+    width: 68%;
+    margin-bottom: 0;
+}
+h3.skeleton {
+    height: clamp(18px, 2.5vw, 20px);
+    width: 52%;
+    margin: clamp(15px, 3vw, 25px) 0;
+}
+.btn.skeleton {
+    height: 48px;
+    width: 190px;
+    border-radius: 8px;
+    margin-bottom: clamp(10px, 2vw, 20px);
+    display: block;
+}
+.icons .skeleton {
+    width: clamp(30px, 5vw, 40px);
+    height: clamp(30px, 5vw, 40px);
+    border-radius: 50%;
+}
