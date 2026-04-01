@@ -14,6 +14,7 @@
     --star-color:#f8d941;
     --transition-duration: .3s;
     --btn-hover : #2a78e0;
+    --iconsFontSize-smallScreens : clamp(15px, 3.9vw, 20px);
 }
 body{
     background-color: var(--white-color);

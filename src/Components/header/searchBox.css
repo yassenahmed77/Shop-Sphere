@@ -5,6 +5,7 @@
     min-width: 0;                    
     max-width: clamp(190px, 46vw, 420px);
     position: relative;
+    
 }
 .top-header .search-box{
     display: flex;
@@ -99,9 +100,13 @@
     .mobile-search-icon {
         display: block;
         cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 44%;
+        transform: translate(-50%, -50%);
     }
     .mobile-search-icon svg {
-        font-size: clamp(18px, 5vw, 24px);
+        font-size: var(--iconsFontSize-smallScreens);
     }
     .top-header .search {
         position: fixed;

@@ -114,14 +114,9 @@
     }
 }
 /* Loading Skeleton */
-/* ------------------------------ */
-/* Product Details Skeleton CSS    */
-/* ------------------------------ */
-
 .loading-items {
   padding: clamp(30px, 5vw, 50px) 0;
 }
-
 .loading-items .item-details .container {
   display: flex;
   justify-content: space-between;
@@ -129,12 +124,9 @@
   flex-wrap: wrap;
   gap: clamp(20px, 3vw, 50px);
 }
-
-/* Images */
 .loading-items .images {
   width: clamp(250px, 40%, 600px);
 }
-
 .loading-items .images .big-image {
   width: 100%;
   height: clamp(150px, 40vw, 390px);
@@ -142,14 +134,12 @@
   background-color: #ddd;
   animation: pulse 1.5s infinite;
 }
-
 .loading-items .small-images {
   margin-top: clamp(10px, 2vw, 20px);
   display: flex;
   gap: clamp(10px, 4vw, 40px);
   justify-content: center;
 }
-
 .loading-items .small-images span {
   flex: 1;
   height: clamp(60px, 24%, 120px);
@@ -157,15 +147,12 @@
   background-color: #ddd;
   animation: pulse 1.5s infinite;
 }
-
-/* Details */
 .loading-items .details {
   width: clamp(250px, 58%, 600px);
   display: flex;
   flex-direction: column;
   gap: clamp(10px, 2vw, 20px);
 }
-
 .loading-items .details .name {
   height: clamp(30px, 4vw, 40px);
   width: 80%;
@@ -173,13 +160,11 @@
   background-color: #ddd;
   animation: pulse 1.5s infinite;
 }
-
 .loading-items .details .stars {
   display: flex;
   gap: 3px;
-  margin: 0; /* no extra margin for skeleton */
+  margin: 0;
 }
-
 .loading-items .details .stars span {
   width: clamp(14px, 1.5vw, 18px);
   height: clamp(14px, 1.5vw, 18px);
@@ -187,7 +172,6 @@
   background-color: #ddd;
   animation: pulse 1.5s infinite;
 }
-
 .loading-items .details .price {
   width: 50%;
   height: clamp(20px, 2vw, 30px);
@@ -195,7 +179,6 @@
   background-color: #ddd;
   animation: pulse 1.5s infinite;
 }
-
 .loading-items .details h5 span,
 .loading-items .details h3 span,
 .loading-items .details .desc,
@@ -204,31 +187,23 @@
   background-color: #ddd;
   animation: pulse 1.5s infinite;
 }
-
-/* Specific heights */
 .loading-items .details h5 span {
   height: clamp(15px, 3vw, 30px);
 }
-
 .loading-items .details .desc {
   height: clamp(80px, 12vw, 120px);
 }
-
 .loading-items .details h3 span {
   height: clamp(20px, 2.5vw, 30px);
 }
-
 .loading-items .details .btn.add {
   width: clamp(120px, 40%, 200px);
   height: clamp(35px, 5vw, 50px);
 }
-
-/* Icons */
 .loading-items .details .icons {
   display: flex;
   gap: clamp(5px, 2vw, 10px);
 }
-
 .loading-items .details .icons span {
   width: clamp(30px, 5vw, 40px);
   height: clamp(30px, 5vw, 40px);
@@ -236,20 +211,16 @@
   background-color: #ddd;
   animation: pulse 1.5s infinite;
 }
-
-/* Prevent hover/click */
 .loading-items .details .btn,
 .loading-items .details .icons span {
   pointer-events: none;
 }
-
 .loading-items .details .btn:hover,
 .loading-items .details .icons span:hover {
   transform: none;
   background-color: #ddd;
   color: inherit;
 }
-
 /* Pulse animation */
 @keyframes pulse {
   0% { background-color: #eee; }
@@ -295,7 +266,6 @@
     0%   { transform: translateX(-150%); }
     100% { transform: translateX(300%); }
 }
-
 .item-details .skeleton,
 .item-details .skeleton * {
     pointer-events: none !important;
