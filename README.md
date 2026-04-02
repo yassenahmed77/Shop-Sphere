@@ -21,7 +21,7 @@
 
 | Home | Mobile | Product | Cart |
 |------|--------|--------|------|
-| ![Home](./public/screenshots/home.png) | ![Mobile](./public/screenshots/mobile-home.png) | ![Product](./public/screenshots/product.png) | ![Cart](./public/screenshots/cart.png) |
+| ![Home](./public/screenshots/home.png) | ![Mobile](./public/screenshots/home-mobile.png) | ![Product](./public/screenshots/product.png) | ![Cart](./public/screenshots/cart.png) |
 
 | Favorites | Search |
 |----------|--------|
