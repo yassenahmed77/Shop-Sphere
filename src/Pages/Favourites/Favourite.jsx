@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { FavContext } from "../Components/Context/FavouriteContext";
+import { FavContext } from "../../Components/Context/FavouriteContext";
 import "./favourite.css";
-import Product from "../Components/Products/Product";
+import Product from "../../Components/Products/Product";
 
 function Favourite() {
     const {favouriteItems} = useContext(FavContext);

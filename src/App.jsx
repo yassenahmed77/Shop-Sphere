@@ -1,5 +1,5 @@
-import TopHeader from "./Components/header/TopHeader.jsx";
-import BottomHeader from "./Components/header/BottomHeader.jsx";
+import TopHeader from "./Components/Header/TopHeader.jsx";
+import BottomHeader from "./Components/Header/BottomHeader.jsx";
 import Home from "./Pages/Home.jsx";
 import ProductDetails from "./Pages/Product-Details/ProductDetails.jsx";
 import { Route , Routes } from "react-router";
@@ -7,9 +7,9 @@ import Cart from "./Components/Cart/Cart.jsx";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./Components/ScrollToTop.jsx";
 import { AnimatePresence } from "framer-motion";
-import Category from "./Pages/Categroy/Category.jsx";
+import Category from "./Pages/Category/Category.jsx";
 import SearchPage from "./Pages/Searched-Products/SearchPage.jsx";
-import Favourite from "./Favourites/Favourite.jsx";
+import Favourite from "./Pages/Favourites/Favourite.jsx"
 
 function App() {
   return (

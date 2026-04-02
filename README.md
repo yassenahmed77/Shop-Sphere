@@ -21,11 +21,11 @@
 
 | Home | Mobile | Product | Cart |
 |------|--------|--------|------|
-| ![Home](./screenshots/home.png) | ![Mobile](./screenshots/mobile-home.png) | ![Product](./screenshots/product.png) | ![Cart](./screenshots/cart.png) |
+| ![Home](./public/screenshots/home.png) | ![Mobile](./public/screenshots/mobile-home.png) | ![Product](./public/screenshots/product.png) | ![Cart](./public/screenshots/cart.png) |
 
 | Favorites | Search |
 |----------|--------|
-| ![Favorites](./screenshots/favourites.png) | ![Search](./screenshots/search.png) |
+| ![Favorites](./public/screenshots/favourites.png) | ![Search](./public/screenshots/search.png) |
 
 ## 🛠️ Tech Stack & Tools
 
